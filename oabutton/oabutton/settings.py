@@ -1,3 +1,5 @@
+import os.path
+
 # Django settings for oabutton project.
 
 DEBUG = True
@@ -64,7 +66,7 @@ STATIC_URL = '/static/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
-    '/Users/victorng/dev/oabutton/python/oabutton/oabutton/static/public',
+    os.path.join(os.path.dirname(os.path.abspath(__file__)), "static/public"),
 )
 
 # List of finder classes that know how to find static files in
